@@ -124,8 +124,6 @@
 		E7F0611014A570E800585C8D /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0610F14A570E800585C8D /* blocks.png */; };
 		E7F0611A14A571ED00585C8D /* splash_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0611814A571ED00585C8D /* splash_landscape.png */; };
 		E7F0611B14A571ED00585C8D /* splash_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0611914A571ED00585C8D /* splash_landscape@2x.png */; };
-		E7F0612414A572CF00585C8D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0612214A572CF00585C8D /* Default.png */; };
-		E7F0612514A572CF00585C8D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0612314A572CF00585C8D /* Default@2x.png */; };
 		E7F0613914A578BF00585C8D /* stampy-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0613614A578BF00585C8D /* stampy-hd.png */; };
 		E7F0613A14A578BF00585C8D /* stampy.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0613714A578BF00585C8D /* stampy.png */; };
 		E7F0613B14A578BF00585C8D /* stampy.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0613814A578BF00585C8D /* stampy.pshs */; };
@@ -137,6 +135,7 @@
 		E7F0615214A58C2F00585C8D /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0614F14A58C2F00585C8D /* bg.png */; };
 		E7F0615314A58C2F00585C8D /* bg.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0615014A58C2F00585C8D /* bg.pshs */; };
 		E7F0615614A58FF000585C8D /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0615514A58FEF00585C8D /* GameLayer.m */; };
+		E7F0615914A5993900585C8D /* OxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0615814A5993800585C8D /* OxPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -395,6 +394,8 @@
 		E7F0615014A58C2F00585C8D /* bg.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bg.pshs; sourceTree = "<group>"; };
 		E7F0615414A58FEF00585C8D /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		E7F0615514A58FEF00585C8D /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
+		E7F0615714A5993800585C8D /* OxPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxPath.h; sourceTree = "<group>"; };
+		E7F0615814A5993800585C8D /* OxPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -467,6 +468,8 @@
 				E7F0610E14A570E800585C8D /* GameConfig.h */,
 				E7F0614314A57D8100585C8D /* Ox.h */,
 				E7F0614414A57D8100585C8D /* Ox.m */,
+				E7F0615714A5993800585C8D /* OxPath.h */,
+				E7F0615814A5993800585C8D /* OxPath.m */,
 				E7F0613C14A579A300585C8D /* SpriteHelperLoader.h */,
 				E7F0613D14A579A300585C8D /* SpriteHelperLoader.mm */,
 				E7F05F4514A570E500585C8D /* Resources */,
@@ -907,8 +910,6 @@
 				E7F0611014A570E800585C8D /* blocks.png in Resources */,
 				E7F0611A14A571ED00585C8D /* splash_landscape.png in Resources */,
 				E7F0611B14A571ED00585C8D /* splash_landscape@2x.png in Resources */,
-				E7F0612414A572CF00585C8D /* Default.png in Resources */,
-				E7F0612514A572CF00585C8D /* Default@2x.png in Resources */,
 				E7F0613914A578BF00585C8D /* stampy-hd.png in Resources */,
 				E7F0613A14A578BF00585C8D /* stampy.png in Resources */,
 				E7F0613B14A578BF00585C8D /* stampy.pshs in Resources */,
@@ -1028,6 +1029,7 @@
 				E7F0614914A58AE800585C8D /* GameScene.m in Sources */,
 				E7F0614C14A58B2F00585C8D /* BackgroundLayer.m in Sources */,
 				E7F0615614A58FF000585C8D /* GameLayer.m in Sources */,
+				E7F0615914A5993900585C8D /* OxPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

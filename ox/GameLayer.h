@@ -9,6 +9,9 @@
 #import "cocos2d.h"
 #import "CCLayer.h"
 
-@interface GameLayer : CCLayer
+@interface GameLayer : CCLayer {
+    NSMutableArray* _oxen;
+    NSMutableDictionary* _activePaths;
+}
 
 @end

@@ -21,7 +21,7 @@
     
     CGSize screenSize = [CCDirector sharedDirector].winSize;
     
-    SpriteHelperLoader* loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"bg"];
+    SpriteHelperLoader* loader = [[[SpriteHelperLoader alloc] initWithContentOfFile:@"bg"] autorelease];
     [loader spriteWithUniqueName:@"snowy_tundra" 
                       atPosition:ccp(screenSize.width /2, screenSize.height /2) 
                          inLayer:self];

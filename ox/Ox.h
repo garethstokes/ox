@@ -13,4 +13,6 @@
     SpriteHelperLoader *_loader;
 }
 
+- (void) explore;
+
 @end

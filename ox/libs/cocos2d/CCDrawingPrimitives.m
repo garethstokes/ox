@@ -111,6 +111,9 @@ void ccDrawLine( CGPoint origin, CGPoint destination )
 	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
 	
+    glEnable(GL_LINE_SMOOTH);
+	glLineWidth( 2.0f );
+    glColor4ub(0,0,0,255);
 	glVertexPointer(2, GL_FLOAT, 0, vertices);	
 	glDrawArrays(GL_LINES, 0, 2);
 	
