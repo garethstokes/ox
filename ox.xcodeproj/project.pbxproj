@@ -122,8 +122,6 @@
 		E7F0610714A570E800585C8D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0610614A570E800585C8D /* RootViewController.m */; };
 		E7F0610A14A570E800585C8D /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7F0610914A570E800585C8D /* HelloWorldLayer.mm */; };
 		E7F0611014A570E800585C8D /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0610F14A570E800585C8D /* blocks.png */; };
-		E7F0611A14A571ED00585C8D /* splash_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0611814A571ED00585C8D /* splash_landscape.png */; };
-		E7F0611B14A571ED00585C8D /* splash_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0611914A571ED00585C8D /* splash_landscape@2x.png */; };
 		E7F0613914A578BF00585C8D /* stampy-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0613614A578BF00585C8D /* stampy-hd.png */; };
 		E7F0613A14A578BF00585C8D /* stampy.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0613714A578BF00585C8D /* stampy.png */; };
 		E7F0613B14A578BF00585C8D /* stampy.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0613814A578BF00585C8D /* stampy.pshs */; };
@@ -136,6 +134,10 @@
 		E7F0615314A58C2F00585C8D /* bg.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0615014A58C2F00585C8D /* bg.pshs */; };
 		E7F0615614A58FF000585C8D /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0615514A58FEF00585C8D /* GameLayer.m */; };
 		E7F0615914A5993900585C8D /* OxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0615814A5993800585C8D /* OxPath.m */; };
+		E7F0616F14A5F62200585C8D /* home-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0616C14A5F62200585C8D /* home-hd.png */; };
+		E7F0617014A5F62200585C8D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0616D14A5F62200585C8D /* home.png */; };
+		E7F0617114A5F62200585C8D /* home.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0616E14A5F62200585C8D /* home.pshs */; };
+		E7F0617714A5F67200585C8D /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0617614A5F67100585C8D /* HomeScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -374,8 +376,6 @@
 		E7F0610914A570E800585C8D /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		E7F0610E14A570E800585C8D /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		E7F0610F14A570E800585C8D /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
-		E7F0611814A571ED00585C8D /* splash_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_landscape.png; sourceTree = "<group>"; };
-		E7F0611914A571ED00585C8D /* splash_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash_landscape@2x.png"; sourceTree = "<group>"; };
 		E7F0612214A572CF00585C8D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		E7F0612314A572CF00585C8D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		E7F0613614A578BF00585C8D /* stampy-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stampy-hd.png"; sourceTree = "<group>"; };
@@ -396,6 +396,11 @@
 		E7F0615514A58FEF00585C8D /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		E7F0615714A5993800585C8D /* OxPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxPath.h; sourceTree = "<group>"; };
 		E7F0615814A5993800585C8D /* OxPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxPath.m; sourceTree = "<group>"; };
+		E7F0616C14A5F62200585C8D /* home-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-hd.png"; sourceTree = "<group>"; };
+		E7F0616D14A5F62200585C8D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		E7F0616E14A5F62200585C8D /* home.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = home.pshs; sourceTree = "<group>"; };
+		E7F0617514A5F67100585C8D /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
+		E7F0617614A5F67100585C8D /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,6 +466,8 @@
 				E7F0610614A570E800585C8D /* RootViewController.m */,
 				E7F0610814A570E800585C8D /* HelloWorldLayer.h */,
 				E7F0610914A570E800585C8D /* HelloWorldLayer.mm */,
+				E7F0617514A5F67100585C8D /* HomeScene.h */,
+				E7F0617614A5F67100585C8D /* HomeScene.m */,
 				E7F0615414A58FEF00585C8D /* GameLayer.h */,
 				E7F0615514A58FEF00585C8D /* GameLayer.m */,
 				E7F0614714A58AE700585C8D /* GameScene.h */,
@@ -812,20 +819,11 @@
 		E7F0611614A571ED00585C8D /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				E7F0616B14A5F62200585C8D /* homescreen */,
 				E7F0614D14A58C2F00585C8D /* bg */,
 				E7F0613514A578BF00585C8D /* stampy */,
-				E7F0611714A571ED00585C8D /* splash */,
 			);
 			path = assets;
-			sourceTree = "<group>";
-		};
-		E7F0611714A571ED00585C8D /* splash */ = {
-			isa = PBXGroup;
-			children = (
-				E7F0611814A571ED00585C8D /* splash_landscape.png */,
-				E7F0611914A571ED00585C8D /* splash_landscape@2x.png */,
-			);
-			path = splash;
 			sourceTree = "<group>";
 		};
 		E7F0613514A578BF00585C8D /* stampy */ = {
@@ -846,6 +844,16 @@
 				E7F0615014A58C2F00585C8D /* bg.pshs */,
 			);
 			path = bg;
+			sourceTree = "<group>";
+		};
+		E7F0616B14A5F62200585C8D /* homescreen */ = {
+			isa = PBXGroup;
+			children = (
+				E7F0616C14A5F62200585C8D /* home-hd.png */,
+				E7F0616D14A5F62200585C8D /* home.png */,
+				E7F0616E14A5F62200585C8D /* home.pshs */,
+			);
+			path = homescreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -908,14 +916,15 @@
 				E7F05F5514A570E500585C8D /* Icon@2x.png in Resources */,
 				E7F05F5814A570E600585C8D /* iTunesArtwork in Resources */,
 				E7F0611014A570E800585C8D /* blocks.png in Resources */,
-				E7F0611A14A571ED00585C8D /* splash_landscape.png in Resources */,
-				E7F0611B14A571ED00585C8D /* splash_landscape@2x.png in Resources */,
 				E7F0613914A578BF00585C8D /* stampy-hd.png in Resources */,
 				E7F0613A14A578BF00585C8D /* stampy.png in Resources */,
 				E7F0613B14A578BF00585C8D /* stampy.pshs in Resources */,
 				E7F0615114A58C2F00585C8D /* bg-hd.png in Resources */,
 				E7F0615214A58C2F00585C8D /* bg.png in Resources */,
 				E7F0615314A58C2F00585C8D /* bg.pshs in Resources */,
+				E7F0616F14A5F62200585C8D /* home-hd.png in Resources */,
+				E7F0617014A5F62200585C8D /* home.png in Resources */,
+				E7F0617114A5F62200585C8D /* home.pshs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,6 +1039,7 @@
 				E7F0614C14A58B2F00585C8D /* BackgroundLayer.m in Sources */,
 				E7F0615614A58FF000585C8D /* GameLayer.m in Sources */,
 				E7F0615914A5993900585C8D /* OxPath.m in Sources */,
+				E7F0617714A5F67200585C8D /* HomeScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

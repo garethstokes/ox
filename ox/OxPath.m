@@ -40,7 +40,7 @@ const float BEE_SPEED = 0.02;
 - (void)moved {
     if ([_path count] == 0) return;
     [_path removeObjectAtIndex:0];
-    NSLog(@"OXPATH: removing item from _path");
+    //NSLog(@"OXPATH: removing item from _path");
     
     //CGPoint lastPosition = [(NSValue *)[_path objectAtIndex:0] CGPointValue];
     //CGPoint currentPosition = [_ox position];
@@ -59,7 +59,6 @@ const float BEE_SPEED = 0.02;
     }
     
     [_path removeAllObjects];
-    
     [_path addObject:[NSValue valueWithCGPoint:startPoint]];
     
     [_ox stopAllActions];

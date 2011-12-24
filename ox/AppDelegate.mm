@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 #import "GameConfig.h"
 #import "RootViewController.h"
-#import "GameScene.h"
+#import "HomeScene.h"
 
 @implementation AppDelegate
 
@@ -24,17 +24,18 @@
 	//
 	// Uncomment the following code if you Application only supports landscape mode
 	//
-
+/*
 		CC_ENABLE_DEFAULT_GL_STATES();
 		CCDirector *director = [CCDirector sharedDirector];
 		CGSize size = [director winSize];
 		CCSprite *sprite = [CCSprite spriteWithFile:@"Default.png"];
 		sprite.position = ccp(size.width/2, size.height/2);
-		sprite.rotation = -90;
+		sprite.rotation = 45;
 		[sprite visit];
 		[[director openGLView] swapBuffers];
 		CC_ENABLE_DEFAULT_GL_STATES();
-}
+*/
+ }
 
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
@@ -71,7 +72,7 @@
 	if( ! [director enableRetinaDisplay:YES] )
 		CCLOG(@"Retina Display Not supported");
 	
-	[director setDeviceOrientation:kCCDeviceOrientationLandscapeLeft];	
+	[director setDeviceOrientation:kCCDeviceOrientationLandscapeRight];	
 	[director setAnimationInterval:1.0/60];
 	[director setDisplayFPS:YES];
 	
@@ -93,7 +94,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [GameScene scene]];
+	[[CCDirector sharedDirector] runWithScene: [HomeScene scene]];
 }
 
 

@@ -26,7 +26,7 @@
     
     [self setContentSize:body.contentSize];
     
-    self.position = ccp(arc4random() % 480, arc4random() % 320);
+    self.position = ccp(arc4random() % 400, arc4random() % 280);
     [self explore];
     return self;
 }
@@ -49,7 +49,7 @@
 {    
     NSLog(@"OX: exploring");
     CGPoint currentPosition = [self position];
-    CGPoint randomPoint = ccp(rand() % 480, rand() % 320);
+    CGPoint randomPoint = ccp(rand() % 400, rand() % 280);
     
     //[_sprite setFlipX:currentPosition.x > random_point.x];
     

@@ -135,7 +135,9 @@ void ccDrawPoly( const CGPoint *poli, NSUInteger numberOfPoints, BOOL closePolyg
 	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
 
-	
+	glLineWidth( 2.0f );
+    glColor4ub(0,0,0,255);
+    
 	// iPhone and 32-bit machines
 	if( sizeof(CGPoint) == sizeof(ccVertex2F) ) {
 

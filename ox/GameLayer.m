@@ -85,11 +85,12 @@
     CGPoint point = [self convertTouchToNodeSpace:touch];
     
     NSLog(@"touched at point: (x => %f, y => %f)", point.x, point.y);
+    //NSLog(@"touched at point: (x => %f, y => %f)", point.x, point.y);
     
     for (Ox *ox in _oxen) 
     {
         
-        if (CGRectContainsPoint([ox boundingBoxInPixels], point))
+        if (CGRectContainsPoint([ox boundingBox], point))
         {
             OxPath *path = [[[OxPath alloc] initFor:ox] autorelease];
 
