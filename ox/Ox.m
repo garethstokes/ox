@@ -20,7 +20,8 @@
 	}
     
     _loader = [[SpriteHelperLoader alloc] initWithContentOfFile:@"stampy"];
-    [_loader spriteWithUniqueName:@"body_basic_pos_2" atPosition:ccp(50,50) inLayer:self];
+    [_loader spriteWithUniqueName:@"body_basic_pos_2" atPosition:ccp(0,0) inLayer:self];
+    [_loader spriteWithUniqueName:@"head_position_2-5_reg_orange" atPosition:ccp(-37,-0) inLayer:self];
     
     return self;
 }

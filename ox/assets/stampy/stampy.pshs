@@ -773,7 +773,7 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/projects/ox/ox/assets/stampy/stampy-hd.png</string>
 				<key>Name</key>
-				<string>head_position_2-5_reg_orange@2x</string>
+				<string>head_position_2-5_reg_orange</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
@@ -857,7 +857,7 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/projects/ox/ox/assets/stampy/stampy-hd.png</string>
 				<key>Name</key>
-				<string>head_position_1_reg_orange@2x</string>
+				<string>head_position_1_reg_orange</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
@@ -941,7 +941,7 @@
 				<key>ImageURL-HD</key>
 				<string>/Users/garrydanger/projects/ox/ox/assets/stampy/stampy-hd.png</string>
 				<key>Name</key>
-				<string>head_position_6-8_reg_orange@2x</string>
+				<string>head_position_6-8_reg_orange</string>
 				<key>Opacity</key>
 				<real>1</real>
 				<key>SD_ImageSize</key>
