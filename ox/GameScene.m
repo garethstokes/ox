@@ -8,6 +8,7 @@
 
 #import "GameScene.h"
 #import "BackgroundLayer.h"
+#import "GameLayer.h"
 
 @implementation GameScene
 
@@ -16,14 +17,11 @@
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
-	// 'layer' is an autorelease object.
-	//HelloWorldLayer *layer = [HelloWorldLayer node];
-	
-	// add layer as a child to scene
-	//[scene addChild: layer];
+    CCLayer *game = [[GameLayer alloc] init];
+    [scene addChild:game z:50];
 	
     CCLayer *background = [[BackgroundLayer alloc] init];
-    [scene addChild:background];
+    [scene addChild:background z:1];
     
 	// return the scene
 	return scene;

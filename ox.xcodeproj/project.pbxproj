@@ -136,6 +136,7 @@
 		E7F0615114A58C2F00585C8D /* bg-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0614E14A58C2F00585C8D /* bg-hd.png */; };
 		E7F0615214A58C2F00585C8D /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0614F14A58C2F00585C8D /* bg.png */; };
 		E7F0615314A58C2F00585C8D /* bg.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0615014A58C2F00585C8D /* bg.pshs */; };
+		E7F0615614A58FF000585C8D /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0615514A58FEF00585C8D /* GameLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -392,6 +393,8 @@
 		E7F0614E14A58C2F00585C8D /* bg-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-hd.png"; sourceTree = "<group>"; };
 		E7F0614F14A58C2F00585C8D /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		E7F0615014A58C2F00585C8D /* bg.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bg.pshs; sourceTree = "<group>"; };
+		E7F0615414A58FEF00585C8D /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		E7F0615514A58FEF00585C8D /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +460,8 @@
 				E7F0610614A570E800585C8D /* RootViewController.m */,
 				E7F0610814A570E800585C8D /* HelloWorldLayer.h */,
 				E7F0610914A570E800585C8D /* HelloWorldLayer.mm */,
+				E7F0615414A58FEF00585C8D /* GameLayer.h */,
+				E7F0615514A58FEF00585C8D /* GameLayer.m */,
 				E7F0614714A58AE700585C8D /* GameScene.h */,
 				E7F0614814A58AE800585C8D /* GameScene.m */,
 				E7F0610E14A570E800585C8D /* GameConfig.h */,
@@ -1022,6 +1027,7 @@
 				E7F0614514A57D8100585C8D /* Ox.m in Sources */,
 				E7F0614914A58AE800585C8D /* GameScene.m in Sources */,
 				E7F0614C14A58B2F00585C8D /* BackgroundLayer.m in Sources */,
+				E7F0615614A58FF000585C8D /* GameLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
