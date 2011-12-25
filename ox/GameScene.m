@@ -9,6 +9,7 @@
 #import "GameScene.h"
 #import "BackgroundLayer.h"
 #import "GameLayer.h"
+#import "Hud.h"
 
 @implementation GameScene
 
@@ -16,11 +17,14 @@
 {
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
+    
+    CCLayer *hud = [[[Hud alloc] init] autorelease];
+    [scene addChild:hud z:100];
 	
-    CCLayer *game = [[GameLayer alloc] init];
+    CCLayer *game = [[[GameLayer alloc] init] autorelease];
     [scene addChild:game z:50];
 	
-    CCLayer *background = [[BackgroundLayer alloc] init];
+    CCLayer *background = [[[BackgroundLayer alloc] init] autorelease];
     [scene addChild:background z:1];
     
 	// return the scene

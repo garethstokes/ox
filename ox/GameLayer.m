@@ -10,6 +10,7 @@
 #import "Ox.h"
 #import "OxPath.h"
 #import "CCTouchDispatcher.h"
+#import "OxSnow.h"
 
 @implementation GameLayer
 
@@ -41,6 +42,9 @@
         [self addChild:ox];
         
         [_oxen addObject:ox];
+        OxSnow *snow = [[[OxSnow alloc] init] autorelease];
+        [self addChild:snow z:10];
+        
         
 	}
 	return self;

@@ -138,6 +138,12 @@
 		E7F0617014A5F62200585C8D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0616D14A5F62200585C8D /* home.png */; };
 		E7F0617114A5F62200585C8D /* home.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0616E14A5F62200585C8D /* home.pshs */; };
 		E7F0617714A5F67200585C8D /* HomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0617614A5F67100585C8D /* HomeScene.m */; };
+		E7F0617C14A6B55E00585C8D /* hud-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0617914A6B55E00585C8D /* hud-hd.png */; };
+		E7F0617D14A6B55E00585C8D /* hud.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0617A14A6B55E00585C8D /* hud.png */; };
+		E7F0617E14A6B55E00585C8D /* hud.pshs in Resources */ = {isa = PBXBuildFile; fileRef = E7F0617B14A6B55E00585C8D /* hud.pshs */; };
+		E7F0618114A6B57600585C8D /* Hud.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0618014A6B57500585C8D /* Hud.m */; };
+		E7F0618314A6BBB400585C8D /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F0618214A6BBB400585C8D /* snow.png */; };
+		E7F0618914A6BC5500585C8D /* OxSnow.m in Sources */ = {isa = PBXBuildFile; fileRef = E7F0618814A6BC5400585C8D /* OxSnow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -401,6 +407,14 @@
 		E7F0616E14A5F62200585C8D /* home.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = home.pshs; sourceTree = "<group>"; };
 		E7F0617514A5F67100585C8D /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
 		E7F0617614A5F67100585C8D /* HomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScene.m; sourceTree = "<group>"; };
+		E7F0617914A6B55E00585C8D /* hud-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hud-hd.png"; sourceTree = "<group>"; };
+		E7F0617A14A6B55E00585C8D /* hud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hud.png; sourceTree = "<group>"; };
+		E7F0617B14A6B55E00585C8D /* hud.pshs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hud.pshs; sourceTree = "<group>"; };
+		E7F0617F14A6B57400585C8D /* Hud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hud.h; sourceTree = "<group>"; };
+		E7F0618014A6B57500585C8D /* Hud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hud.m; sourceTree = "<group>"; };
+		E7F0618214A6BBB400585C8D /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
+		E7F0618714A6BC5300585C8D /* OxSnow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OxSnow.h; sourceTree = "<group>"; };
+		E7F0618814A6BC5400585C8D /* OxSnow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxSnow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +482,8 @@
 				E7F0610914A570E800585C8D /* HelloWorldLayer.mm */,
 				E7F0617514A5F67100585C8D /* HomeScene.h */,
 				E7F0617614A5F67100585C8D /* HomeScene.m */,
+				E7F0617F14A6B57400585C8D /* Hud.h */,
+				E7F0618014A6B57500585C8D /* Hud.m */,
 				E7F0615414A58FEF00585C8D /* GameLayer.h */,
 				E7F0615514A58FEF00585C8D /* GameLayer.m */,
 				E7F0614714A58AE700585C8D /* GameScene.h */,
@@ -477,6 +493,8 @@
 				E7F0614414A57D8100585C8D /* Ox.m */,
 				E7F0615714A5993800585C8D /* OxPath.h */,
 				E7F0615814A5993800585C8D /* OxPath.m */,
+				E7F0618714A6BC5300585C8D /* OxSnow.h */,
+				E7F0618814A6BC5400585C8D /* OxSnow.m */,
 				E7F0613C14A579A300585C8D /* SpriteHelperLoader.h */,
 				E7F0613D14A579A300585C8D /* SpriteHelperLoader.mm */,
 				E7F05F4514A570E500585C8D /* Resources */,
@@ -819,6 +837,8 @@
 		E7F0611614A571ED00585C8D /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				E7F0618214A6BBB400585C8D /* snow.png */,
+				E7F0617814A6B55E00585C8D /* hud */,
 				E7F0616B14A5F62200585C8D /* homescreen */,
 				E7F0614D14A58C2F00585C8D /* bg */,
 				E7F0613514A578BF00585C8D /* stampy */,
@@ -854,6 +874,16 @@
 				E7F0616E14A5F62200585C8D /* home.pshs */,
 			);
 			path = homescreen;
+			sourceTree = "<group>";
+		};
+		E7F0617814A6B55E00585C8D /* hud */ = {
+			isa = PBXGroup;
+			children = (
+				E7F0617914A6B55E00585C8D /* hud-hd.png */,
+				E7F0617A14A6B55E00585C8D /* hud.png */,
+				E7F0617B14A6B55E00585C8D /* hud.pshs */,
+			);
+			path = hud;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -925,6 +955,10 @@
 				E7F0616F14A5F62200585C8D /* home-hd.png in Resources */,
 				E7F0617014A5F62200585C8D /* home.png in Resources */,
 				E7F0617114A5F62200585C8D /* home.pshs in Resources */,
+				E7F0617C14A6B55E00585C8D /* hud-hd.png in Resources */,
+				E7F0617D14A6B55E00585C8D /* hud.png in Resources */,
+				E7F0617E14A6B55E00585C8D /* hud.pshs in Resources */,
+				E7F0618314A6BBB400585C8D /* snow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,6 +1074,8 @@
 				E7F0615614A58FF000585C8D /* GameLayer.m in Sources */,
 				E7F0615914A5993900585C8D /* OxPath.m in Sources */,
 				E7F0617714A5F67200585C8D /* HomeScene.m in Sources */,
+				E7F0618114A6B57600585C8D /* Hud.m in Sources */,
+				E7F0618914A6BC5500585C8D /* OxSnow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
