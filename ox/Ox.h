@@ -6,13 +6,17 @@
 //  Copyright (c) 2011 digital five. All rights reserved.
 //
 
-#import "CCLayer.h"
+#import "cocos2d.h"
 #import "SpriteHelperLoader.h"
 
 @interface Ox : CCLayer {
     SpriteHelperLoader *_loader;
+    CCSprite * _spriteBody;
+    CCSprite * _spriteHead;
 }
 
 - (void) explore;
+- (int) calculateOrientationFrom:(CGPoint)current to:(CGPoint)to;
+- (void) orientate:(int)orientation;
 
 @end

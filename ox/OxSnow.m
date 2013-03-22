@@ -9,6 +9,7 @@
 #import "OxSnow.h"
 
 @implementation OxSnow
+@synthesize intensity = _intensity;
 
 - (id) init
 {
@@ -18,35 +19,55 @@
 		return self;
 	}
     
-    CCParticleSnow *emitter = [CCParticleSnow node];
-    [self addChild: emitter];
+    _emitter = [CCParticleSnow node];
+    [self addChild: _emitter];
     
-    CGPoint p = emitter.position;
-    emitter.position = ccp( p.x, p.y);
-    emitter.life = 3;
-    emitter.lifeVar = 1;
+    CGPoint p = _emitter.position;
+    _emitter.position = ccp( p.x, p.y);
+    _emitter.life = 3;
+    _emitter.lifeVar = 1;
     
     // gravity
-    emitter.gravity = ccp(0,-10);
+    _emitter.gravity = ccp(0,-10);
     
     // speed of particles
-    emitter.speed = 130;
-    emitter.speedVar = 30;
+    _emitter.speed = 130;
+    _emitter.speedVar = 30;
     
-    
-    ccColor4F startColor = emitter.startColor;
+    ccColor4F startColor = _emitter.startColor;
     startColor.r = 0.9f;
     startColor.g = 0.9f;
     startColor.b = 0.9f;
-    emitter.startColor = startColor;
+    _emitter.startColor = startColor;
     
-    ccColor4F startColorVar = emitter.startColorVar;
+    ccColor4F startColorVar = _emitter.startColorVar;
     startColorVar.b = 0.1f;
-    emitter.startColorVar = startColorVar;
+    _emitter.startColorVar = startColorVar;
     
-    emitter.emissionRate = emitter.totalParticles/emitter.life;
-    emitter.texture = [[CCTextureCache sharedTextureCache] addImage: @"snow.png"];
+    _emitter.emissionRate = 10; //_emitter.totalParticles/_emitter.life;
+    _emitter.texture = [[CCTextureCache sharedTextureCache] addImage: @"snow.png"];
     return self;
+}
+
+- (void) setIntensity:(float)i
+{
+    if (i > 100)
+        i = 50;
+    
+    NSLog(@"setting intensity: %f", i);
+    
+    _intensity = i;
+    _emitter.emissionRate = i;
+    if (fmod(i, 100) == 0) _emitter.startSize += 5;
+}
+
+- (void) dealloc
+{
+    NSLog(@"Dealloc OxSnow");
+    [_emitter release];
+    _emitter = nil;
+    [self removeAllChildrenWithCleanup:YES];
+    [super dealloc];
 }
 
 @end

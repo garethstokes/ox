@@ -10,7 +10,6 @@
 #import "Ox.h"
 #import "OxPath.h"
 #import "CCTouchDispatcher.h"
-#import "OxSnow.h"
 
 @implementation GameLayer
 
@@ -42,10 +41,11 @@
         [self addChild:ox];
         
         [_oxen addObject:ox];
-        OxSnow *snow = [[[OxSnow alloc] init] autorelease];
-        [self addChild:snow z:10];
+        _snow = [[[OxSnow alloc] init] retain];
+        [self addChild:_snow z:10];
         
-        
+        // add step
+        [self schedule: @selector(step:) interval:(20.0f)];
 	}
 	return self;
 }
@@ -82,6 +82,16 @@
 		ccDrawPoly(vertices, 4, YES);
     }
      */
+}
+
+- (void) step:(ccTime)delta
+{
+    _time += delta;
+    NSLog(@"time: %f", _time);
+    
+    float intensity = _snow.intensity;
+    intensity += 50;
+    [_snow setIntensity:intensity];
 }
 
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event 
@@ -135,8 +145,13 @@
 - (void) dealloc
 {
     NSLog(@"Dealloc Ox");
+    [_oxen release];
+    [_activePaths release];
+    [_snow release];
+    
     _oxen = nil;
     _activePaths = nil;
+    _snow = nil;
     [self removeAllChildrenWithCleanup:YES];
     [super dealloc];
 }

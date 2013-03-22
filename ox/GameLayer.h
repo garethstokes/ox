@@ -7,11 +7,13 @@
 //
 
 #import "cocos2d.h"
-#import "CCLayer.h"
+#import "OxSnow.h"
 
 @interface GameLayer : CCLayer {
     NSMutableArray* _oxen;
     NSMutableDictionary* _activePaths;
+    OxSnow *_snow;
+    ccTime _time;
 }
 
 @end

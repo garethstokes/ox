@@ -43,4 +43,3 @@
 #endif
 
 #endif // __GAME_CONFIG_H
-

@@ -42,10 +42,14 @@ const float BEE_SPEED = 0.02;
     [_path removeObjectAtIndex:0];
     //NSLog(@"OXPATH: removing item from _path");
     
-    //CGPoint lastPosition = [(NSValue *)[_path objectAtIndex:0] CGPointValue];
-    //CGPoint currentPosition = [_ox position];
+    if ([_path count] == 0) return;
+    
+    CGPoint lastPosition = [(NSValue *)[_path objectAtIndex:0] CGPointValue];
+    CGPoint currentPosition = [_ox position];
     
     //[_ox setFlipX:currentPosition.x > lastPosition.x];
+    int orientation = [_ox calculateOrientationFrom:lastPosition to:currentPosition];
+    [_ox orientate:orientation];
 }
 
 - (void)beginPath:(CGPoint)startPoint 
@@ -87,6 +91,7 @@ const float BEE_SPEED = 0.02;
     _sequence = [[CCSequence actionOne:prevAction two: nextSequence] retain];
 }
 
+// note: worst name of a function, ever!
 - (void) makeItSo 
 {
     if (_sequence != nil) 

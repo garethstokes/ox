@@ -8,6 +8,11 @@
 
 #import "cocos2d.h"
 
-@interface OxSnow : CCLayer
+@interface OxSnow : CCLayer {
+    CCParticleSnow *_emitter;
+    float _intensity;
+}
+
+@property float intensity;
 
 @end
